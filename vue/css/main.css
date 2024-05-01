@@ -1,0 +1,37 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+#app {
+    display: flex;
+    gap: 26vw;
+    margin-top: 2vh;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+    margin-top: 15vh;
+}
+
+.tab {
+    margin-left: 2vw;
+    cursor: pointer;
+    display:inline;
+    font-size: 5vh;
+    width: fit-content;
+}
+
+.activeTab {
+    padding: 1vh 4vh;
+    background-color: #14c4eb;
+    border-bottom: 1vh solid  #2186de;
+    font-size: 6vh;
+}
