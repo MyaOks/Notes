@@ -8,10 +8,19 @@ a {
     text-decoration: none;
 }
 
+button {
+    background-color: #14c4eb;
+    border: 1px solid #2186de;
+    height: 3vh;
+    font-size: 2vh;
+    font-weight: bold;
+    width: 17vw;
+}
+
 #app {
     display: flex;
-    gap: 26vw;
     margin-top: 2vh;
+    justify-content: space-around;
 }
 
 .menu {
@@ -22,7 +31,6 @@ a {
 }
 
 .tab {
-    margin-left: 2vw;
     cursor: pointer;
     display:inline;
     font-size: 5vh;
@@ -34,4 +42,76 @@ a {
     background-color: #14c4eb;
     border-bottom: 1vh solid  #2186de;
     font-size: 6vh;
+}
+
+.disabledButtonDelAddTask {
+    display: none;    
+}
+
+.disabledButtonAddCard {
+    pointer-events: none;
+    background-color: darkgrey;
+}
+
+.form_add_cart {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid #2186de;
+    gap: 6vh;
+    width: 50vw;
+    padding: 2vh 2vh 2vh 2vh;
+}
+
+.form_add_cart > h1 {
+    text-align: center;
+}
+
+.form_add_cart > div {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5vh;
+}
+
+.form_add_cart > div > label {
+    font-size: 2.5vh;
+}
+
+.form_add_cart > div > input {
+    border:none; 
+    outline:none;
+    border-bottom: 1px solid black;
+}
+
+.form_add_cart > div > textarea {
+    border:none; 
+    outline:none;
+    border-bottom: 1px solid black;
+    resize: none;
+}
+
+.form_add_cart > div:last-of-type {
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+}
+
+.form_add_cart > div:last-of-type > div:first-child {
+    display: flex;
+    flex-direction: column;
+    gap: 1vh;
+}
+
+.form_add_cart > div:last-of-type > div:first-child > div > input:last-child {
+    border:none; 
+    outline:none;
+    border-bottom: 1px solid black;
+}
+
+.form_add_cart > div:last-of-type > div:last-child {
+    display: flex;
+    gap: 2vh;
+}
+
+.form_add_cart > button {
+    margin-left: auto;
 }
